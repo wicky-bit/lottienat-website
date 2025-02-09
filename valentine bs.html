@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ask Her Out</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #ffe4e1;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .cute-img {
+            width: 250px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 10px;
+            transition: 0.3s;
+        }
+        .yes-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .no-btn {
+            background-color: #ff4d4d;
+            color: white;
+            position: absolute;
+        }
+        .yes-btn:hover {
+            background-color: #45a049;
+        }
+        .no-btn:hover {
+            background-color: #ff1a1a;
+        }
+        .reviews {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .review {
+            font-style: italic;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>will u be my valentine?</h1>
+        <p>if u say no i will genuinely kms and then you</p>
+
+        <!-- Image -->
+        <img src="lottie gif" alt="lottie gif 1" class="show-img">
+        <img src="nat gif 2" alt="natalie gif 2" class="'show-img">
+      
+        <!-- Yes/No Buttons -->
+        <div class="buttons">
+            <button class="btn yes-btn" onclick="sayYes()">Yes</button>
+            <button class="btn no-btn" id="noButton" onmouseover="moveNoButton()">No</button>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews">
+            <h2>my thoughts on this</h2>
+            <p class="review">"wow omg she spent sm time on this" - me</p>
+            <p class="review">"how can anyone say no to this" - me again</p>
+            <p class="review">"be the nat to my lottie pls" - obviously fucking me</p>
+        </div>
+    </div>
+
+    <script>
+        function sayYes() {
+            alert("i'm jumping up and down in joy holy moly pls watch yj with me on the 14th ily");
+        }
+
+        function moveNoButton() {
+            let btn = document.getElementById("noButton");
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 100);
+            btn.style.left = x + "px";
+            btn.style.top = y + "px";
+        }
+    </script>
+</body>
+</html>
+
+
